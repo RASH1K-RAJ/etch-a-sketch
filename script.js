@@ -46,7 +46,7 @@ bx_inpt_bt.addEventListener('click', (e) =>{
     bx_inpt.value = ``;
 });
 
-const erase = document.querySelector('.erase');
+const erase = document.querySelector('.clear');
 erase.addEventListener('click', () =>{
     createGrid(no_boxes);
 });
