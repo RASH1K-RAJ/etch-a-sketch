@@ -86,16 +86,19 @@ clear_bt.addEventListener('click', () =>{
     createGrid(no_boxes);
 });
 
-//Submitting no of boxes
-const bx_inpt = document.querySelector('.bx_inpt');
-const bx_inpt_bt = document.querySelector('.bx_inpt_bt');
+//slide input
 
-bx_inpt_bt.addEventListener('click', (e) =>{
-    if(!(bx_inpt.value <= 100 && bx_inpt.value > 0)) return;
-    no_boxes = bx_inpt.value
+const  bx_inpt = document.querySelector('#bx_inpt');
+bx_inpt.addEventListener("input", (e)=>{
+    no_boxes =  bx_inpt.value;
     createGrid(no_boxes);
-    bx_inpt.value = ``;
+    const choice = document.querySelector('.choice');
+    choice.textContent = `${no_boxes} x ${no_boxes}`;
+
 });
 
-
-
+bx_inpt.addEventListener("mousemove", (e)=>{
+    var x = (bx_inpt.value/63)*100;
+    var color = `linear-gradient(90deg, rgb(0, 0, 0) ${x}%, rgb(214, 214, 214) ${x}%)`;
+    bx_inpt.style.background = color;
+});

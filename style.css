@@ -19,6 +19,7 @@ body{
     font-weight: bold;
     background-color: #e04f51;
     box-shadow: 0rem 0.3rem 0.8rem 0rem rgba(0, 0, 0, 0.75);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content{
@@ -43,13 +44,18 @@ body{
     height: 10rem;
     border: none;
     appearance: none;
+    transition: all 0.2s;
+}
+
+.clr_selection:hover{
+    transform: scale(1.1);
 }
 
 .clr_selection::-webkit-color-swatch{
     border-radius: 5rem;
     border: none;
     box-shadow: 0rem 0.5rem 0.3rem 0rem rgba(0, 0, 0, 0.75);
-
+    cursor: pointer;
 }
 
 
@@ -77,6 +83,10 @@ body{
     padding: 1rem 4rem;
     border-radius: 1.8rem;
     box-shadow: 0.5rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.75);
+    transition: all 0.2s;
+}
+.buttons label:hover{
+    transform: scale(1.1);
 }
 
 .clear{
@@ -90,7 +100,47 @@ body{
     border-radius: 1.8rem;
     box-shadow: 0.5rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.75);
     border: none;
+    transition: all 0.2s;
 }
+
+.clear:hover{
+    transform: scale(1.1);
+}
+
+.choice{
+    font-size: 3rem;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#bx_inpt{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20rem;
+    height: 1.3rem;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 15.87%, rgb(214, 214, 214) 15.87%);
+    opacity: 0.7;
+    outline: none;
+    -webkit-transition: opactiy 0.2s;
+    transition: opactiy 0.2s;
+    border-radius: 1.2rem;
+    box-shadow: 0rem 0.1rem 1rem 0rem black;
+}
+
+#bx_inpt:hover{
+    opacity: 1;
+}
+
+#bx_inpt::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 3rem;
+    height: 3rem;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
 
 
 .container {
@@ -107,6 +157,7 @@ body{
     background-color: #302f2f;
     padding: 1rem 4rem;
     box-shadow: 0rem -0.3rem 1rem 0rem rgba(0, 0, 0, 0.75);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a{
