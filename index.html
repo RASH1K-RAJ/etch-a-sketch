@@ -8,20 +8,24 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1>
+    <div class="header">
+        <h1>Etch-A-Sketch</h1>
+
+    </div>
+
     <div class="clr_opt">
         <input type="color" class="clr_selection">
     </div>
+
     <div class="buttons">
         <input type="radio" id="color" name="mode" class='hide_bx' value="black"  checked>
         <label for="color" class="color">Color</label>
         
-        <!-- <input type="radio" id="rainbow" name="mode" class='hide_bx' value="addRainbow">
+        <!-- <input type="radio" id="rainbow" name="mode" class='hide_bx' value="black">
         <label for="rainbow" class="rainbow">Rainbow</label> -->
         
         <input type="radio" id="eraser" name="mode" class='hide_bx' value="white">
         <label for="eraser" class="eraser">Eraser</label>
-        
     </div>
 
     <button class="clear">Clear</button>
@@ -31,6 +35,8 @@
     <button class="bx_inpt_bt">Submit</button>
 
     <div class="container"></div>
+
+    <div class="footer"></div>
 
     <script src="script.js"></script>
 </body>

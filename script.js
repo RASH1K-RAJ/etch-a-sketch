@@ -30,14 +30,14 @@ function addColor(event){
 function clickAndMove(event){
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((a_box) =>{
-        a_box.addEventListener('mouseover', addColor);
+        a_box.addEventListener('mouseenter', addColor);
     });
 }
 
 function removeClickAndMove(event){
     const boxes = document.querySelectorAll('.box');
     boxes.forEach((a_box) =>{
-        a_box.removeEventListener('mouseover', addColor);
+        a_box.removeEventListener('mouseenter', addColor);
     });
 }
 
@@ -50,7 +50,7 @@ container.addEventListener('mouseup', removeClickAndMove);
 container.addEventListener('mouseleave', removeClickAndMove);
 
 //global variables
-let color_usd = 'black';
+var color_usd = document.querySelector('#color').value;
 var no_boxes = 10;
 
 createGrid(10);
@@ -60,7 +60,9 @@ const color_selection = document.querySelector('input[type="color"]');
 color_selection.addEventListener("change", (event)=>{
     const color_button = document.querySelector('#color');
     color_button.value = `${event.target.value}`;
+    if(color_button.checked) color_usd = color_button.value;
 });
+
 //radio buttons
 const options = document.querySelectorAll('.hide_bx');
 const color = document.querySelector('.color');
