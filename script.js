@@ -55,6 +55,12 @@ var no_boxes = 10;
 
 createGrid(10);
 
+//color input
+const color_selection = document.querySelector('input[type="color"]');
+color_selection.addEventListener("change", (event)=>{
+    const color_button = document.querySelector('#color');
+    color_button.value = `${event.target.value}`;
+});
 //radio buttons
 const options = document.querySelectorAll('.hide_bx');
 const color = document.querySelector('.color');
