@@ -8,35 +8,38 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>Etch-A-Sketch</h1>
+    <div class="header">Etch-A-Sketch</div>
+
+    <div class="content">
+        <div class="command">
+            <div class="clr_opt">
+                <input type="color" class="clr_selection">
+            </div>
+
+            <div class="buttons">
+                <input type="radio" id="color" name="mode" class='hide_bx' value="black"  checked>
+                <label for="color" class="color">Color</label>
+                
+                <input type="radio" id="rainbow" name="mode" class='hide_bx' value="black">
+                <label for="rainbow" class="rainbow">Rainbow</label>
+                
+                <input type="radio" id="eraser" name="mode" class='hide_bx' value="white">
+                <label for="eraser" class="eraser">Eraser</label>
+            </div>
+
+            <button class="clear">Clear</button>
+
+            <label>Enter the no of Boxes: </label>
+            <input type="text" class="bx_inpt">
+            <button class="bx_inpt_bt">Submit</button>
+
+        </div>
+        <div class="container"></div>
 
     </div>
 
-    <div class="clr_opt">
-        <input type="color" class="clr_selection">
-    </div>
 
-    <div class="buttons">
-        <input type="radio" id="color" name="mode" class='hide_bx' value="black"  checked>
-        <label for="color" class="color">Color</label>
-        
-        <input type="radio" id="rainbow" name="mode" class='hide_bx' value="black">
-        <label for="rainbow" class="rainbow">Rainbow</label>
-        
-        <input type="radio" id="eraser" name="mode" class='hide_bx' value="white">
-        <label for="eraser" class="eraser">Eraser</label>
-    </div>
-
-    <button class="clear">Clear</button>
-
-    <label>Enter the no of Boxes: </label>
-    <input type="text" class="bx_inpt">
-    <button class="bx_inpt_bt">Submit</button>
-
-    <div class="container"></div>
-
-    <div class="footer"></div>
+    <div class="footer">Copywrite by <a href="#">Rashik Raj</a></div>
 
     <script src="script.js"></script>
 </body>
