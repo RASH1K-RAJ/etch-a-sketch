@@ -24,6 +24,11 @@ function createBox(box_width){
 
 function addColor(event){
     const a_box = event.target;
+    if(document.querySelector('#rainbow').checked){
+        color_usd = "#" + Math.floor(Math.random()* 256).toString(16).padStart(2,'0')
+        + Math.floor(Math.random()* 256).toString(16).padStart(2,'0')
+        + Math.floor(Math.random()* 256).toString(16).padStart(2,'0');
+    }
     a_box.style['background-color'] = color_usd;
 }
 
