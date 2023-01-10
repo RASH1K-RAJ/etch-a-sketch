@@ -8,12 +8,26 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="buttons">
+        <input type="radio" id="color" name="mode" class='hide_bx' value="black"  checked>
+        <label for="color" class="color">Color</label>
+        
+        <!-- <input type="radio" id="rainbow" name="mode" class='hide_bx' value="addRainbow">
+        <label for="rainbow" class="rainbow">Rainbow</label> -->
+        
+        <input type="radio" id="eraser" name="mode" class='hide_bx' value="white">
+        <label for="eraser" class="eraser">Eraser</label>
+        
+    </div>
+
+    <button class="clear">Clear</button>
+
     <label>Enter the no of Boxes: </label>
     <input type="text" class="bx_inpt">
     <button class="bx_inpt_bt">Submit</button>
-    <button class="eraser">Eraser</button>
-    <button class="clear">Clear</button>
+
     <div class="container"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

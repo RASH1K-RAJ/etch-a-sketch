@@ -4,6 +4,12 @@
     border: 5px solid black;
 }
 
-.drew{
-    background-color: black;
+.hide_bx{
+    display: none;
 }
+
+.buttons label{
+    border: 2px solid black;
+    margin-right: 2em;
+}
+
